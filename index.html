@@ -207,9 +207,9 @@
         <h4>Sitemap</h4>
         <ul>
           <li><a href="">Home</a></li>
-          <li><a href=""></a>About Us</li>
-          <li>Programmes</li>
-          <li>Contact</li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programmes">Programmes</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="socials">
@@ -244,10 +244,28 @@
         All rights reserved</p>
     </div>
   </footer>
+  <button class="btn scroll-btn" onclick="scrollTopAnimated()"><i class="fas fa-arrow-up"></i></button>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 550) {
+          $('.scroll-btn').fadeIn();
+        } else {
+          $('.scroll-btn').fadeOut();
+        }
+      });
+    });
+
+    function scrollTopAnimated() {
+      $("html, body").animate({
+        scrollTop: "0"
+      }, 300);
+    }
   </script>
   <script src="js/script.js"></script>
 </body>
