@@ -141,7 +141,7 @@ main span {
 
 .welcome-img {
   position: absolute;
-  width: 60%;
+  width: 50%;
   right: 0;
 }
 
@@ -594,6 +594,7 @@ input::placeholder {
   main p {
     margin-bottom: 28px;
     margin-top: 0px;
+    margin-left: 32px;
   }
 
   .btn {
@@ -623,8 +624,8 @@ input::placeholder {
 
   .welcome-img {
     position: absolute;
-    height: 450px;
-    width: 38%;
+    height: 442px;
+    width: 35%;
     top: 20%;
     right: 28%;
   }
