@@ -46,11 +46,15 @@ header {
   padding: 20px;
   margin: 0 auto;
   max-width: 100vw;
-  /* height: 467px; */
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+  background: #fff;
 }
 
 nav {
-  /* position: fixed; */
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -67,19 +71,12 @@ nav {
   list-style: none;
 }
 
-/* .show {
-  display: flex;
-  position: absolute;
-  top: 20%;
-  right: 0;
-  background: #fff;
-  z-index: 1;
-} */
 .show {
   display: flex;
   position: fixed;
-  top: 15%;
+  top: 10%;
   right: 0;
+  margin-top: 24px;
   height: 100vh;
   background: #fff;
   z-index: 1;
@@ -91,6 +88,7 @@ nav {
   border: 0;
   color: #30355F;
   font-size: 20px;
+  padding-right: 16px;
   cursor: pointer;
 }
 
@@ -549,7 +547,7 @@ input::placeholder {
 
   nav img,
   nav ul {
-    margin: 10px 78px;
+    margin: 10px 40px 10px 38px;
   }
 
   .nav-ul {
@@ -570,7 +568,6 @@ input::placeholder {
     color: #30355F;
     padding: 10px 20px;
     text-decoration: none;
-
   }
 
   main {
@@ -700,7 +697,7 @@ input::placeholder {
 
   .events .container {
     width: 85%;
-    margin-left: 195px;
+    margin-left: 15%;
     flex-direction: row;
     justify-content: space-between;
 
