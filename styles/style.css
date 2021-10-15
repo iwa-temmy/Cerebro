@@ -216,7 +216,8 @@ main div p {
   color: #03043C;
   line-height: 1.4;
 }
-.about-img-container{
+
+.about-img-container {
   position: relative;
 }
 
@@ -227,7 +228,8 @@ main div p {
   margin-top: 10%;
   z-index: -1;
 }
-.play-button{
+
+.play-button {
   position: absolute;
   cursor: pointer;
   color: #DAA92F;
@@ -238,6 +240,7 @@ main div p {
   border-radius: 50%;
   z-index: 9;
 }
+
 .goal {
   display: flex;
   align-items: start;
@@ -415,8 +418,8 @@ main div p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 220px;
+  width: 220px;
   color: #03043C;
 }
 
@@ -1010,7 +1013,10 @@ footer {
   }
 
   .programmes .shape1 {
-    width: 200px;
+    position: absolute;
+    height: 480px;
+    right: 0;
+    z-index: -1;
   }
 
   .programmes h1 {
