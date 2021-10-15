@@ -441,7 +441,7 @@ main span {
 }
 
 .instructors {
-  background: url('/img/BG.png');
+  background: url('/img/Vector.png');
   height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -976,8 +976,8 @@ footer {
   .instructors {
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 80px;
-    padding-top: 155px;
+     padding-bottom: 35%;
+    padding-top: 10%;
   }
 
   .instructor-cards {
