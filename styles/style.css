@@ -99,6 +99,9 @@ nav {
   text-decoration: none;
 
 }
+.nav-ul li a:hover {
+  color: #DAA92F;
+}
 
 .nav-ul li:last-child {
   border: 2px solid #FDC456;
@@ -156,7 +159,11 @@ main div p {
   color: white;
   text-transform: uppercase;
 }
-
+.program-btn:hover{
+  color: #DAA92F;
+  background: #fff;
+  border: 2px solid #DAA92F;
+}
 .contact-btn {
   background-color: #fff;
   border: 1px solid var(--clr-primary);
@@ -701,9 +708,7 @@ footer {
 }
 
 .newsletter {
-  margin-top: 3.5rem;
-  /* font-family: Poppins;
-  line-height: 22px; */
+  margin-top: 0.8rem;
 }
 
 .email_input {
@@ -730,9 +735,11 @@ footer {
 .mail-icon {
   position: absolute;
   right: 4px;
-  top: 28px;
-  background: transparent;
-  color: #ccc;
+  top: 10px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px 12px;
+  color: #201907;
 }
 
 .tabs ul {
@@ -1220,6 +1227,7 @@ footer {
   }
 
   .office {
+    width: 30%;
     margin: 0rem;
     font-size: 14px;
   }
