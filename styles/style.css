@@ -219,6 +219,8 @@ main span {
 
 .about-img {
   height: 500px;
+  width: 100%;
+  margin-top: 10%;
 }
 
 .goal {
@@ -293,6 +295,50 @@ main span {
   height: 505px;
   right: 0;
   z-index: -1;
+}
+
+.cards {
+  margin-top: 60px;
+}
+
+.card {
+  display: flex;
+  border: 2px solid #fff;
+  background: #fff;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 145px;
+  object-fit: cover;
+  border-radius: 8px;
+
+}
+
+.card-content {
+  margin: 15px;
+}
+
+.card-content h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #252F40;
+}
+
+.card-content h5 {
+  margin-top: 2px;
+  font-weight: 500;
+  color: #47BFB5;
+  font-size: 16px;
+}
+
+.card-content p {
+  font-size: 13px;
+  padding-top: 10px;
+  color: #67748E;
 }
 
 .programmes .cards {
@@ -538,7 +584,8 @@ main span {
   /* outline: 0; */
   color: #fff;
 }
-.contact-shape{
+
+.contact-shape {
   display: none;
 }
 
@@ -800,7 +847,9 @@ footer {
     padding: 30px 50px;
     line-height: 1.8;
   }
-
+  .about-img{
+    width: unset;
+  }
   .about h3 {
     font-size: 20px;
   }
