@@ -402,12 +402,11 @@ main span {
   background-size: cover;
   position: relative;
   color: #fff;
-  /* padding: 50px 16px 20px 16px; */
 }
 
 .instructor-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 40px;
 }
 
@@ -421,7 +420,7 @@ main span {
 /* .instructor-card img{
  
 } */
-.instructor-card h3 {
+.instructor-card h4 {
   color: #101011;
 }
 
@@ -538,6 +537,9 @@ main span {
   border: 0;
   /* outline: 0; */
   color: #fff;
+}
+.contact-shape{
+  display: none;
 }
 
 footer {
@@ -895,19 +897,9 @@ footer {
     padding-top: 155px;
   }
 
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
-  }
-
-  .card img {
-    width: 40%;
-    height: 120px;
-  }
-
-  .card-content {
-    margin: 18px;
+  .instructor-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
   }
 
   .contact {
