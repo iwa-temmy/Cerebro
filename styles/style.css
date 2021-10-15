@@ -317,7 +317,7 @@ main div p {
 
 .programmes h1 {
   position: absolute;
-  top: 2%;
+  top: 3%;
   right: 14%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -776,7 +776,7 @@ footer {
   top: 90%;
   right: 20px;
   border: #ccc;
-  color: #03043C;
+  color: #201907;
   border-radius: 50%;
   padding: 15px 18px;
 }
