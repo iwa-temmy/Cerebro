@@ -30,7 +30,7 @@ body {
 header {
   position: relative;
   z-index: 9;
-  height: 900px;
+  height: 68.1rem;
 }
 
 .container {
@@ -81,7 +81,7 @@ nav {
 .hamburger {
   background-color: transparent;
   border: 0;
-  color: #30355F;
+  color: #101011;
   font-size: 20px;
   padding-right: 16px;
   cursor: pointer;
@@ -113,28 +113,24 @@ main {
   flex-direction: column;
 }
 
-main div {
+main .hero {
   text-align: center;
 }
-
-/* main {
-  position: relative;
+main div h1{
+  margin: 17% 0;
 }
-
-main p {
-  margin-bottom: 88px;
-  margin-top: 45px;
+main div h1 span:last-child {
+  color: var(--clr-primary)
 }
-
-main span {
-  display: block;
-  font-size: 25px;
-  font-weight: 700;
-  color: #03043C;
-} */
+main div p {
+    font-size: 18px;
+    margin: 16px 32px;
+    font-weight: 700;
+}
 
 .welcome-img {
-  height: 480px;
+  margin-top: 22px;
+  height: 540px;
 }
 
 .btn {
@@ -174,16 +170,17 @@ main span {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  /* position: absolute;
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
-  right: 0; */
+  right: 0;
+  top: -3%;
   text-align: center;
   border-radius: 100px;
   border: 2px solid #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  margin-top: -40px;
+  /* margin-top: -40px; */
 }
 
 .stats h2 {
@@ -204,13 +201,6 @@ main span {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  /* position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  top: 25%;
-  left: 0;
-  right: 0; */
-  margin-top: 50px;
   margin-bottom: 30px;
   padding: 30px;
   color: #03043C;
@@ -242,8 +232,9 @@ main span {
 .choose {
   display: flex;
   width: 100%;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 50px
+  padding: 20px 20px 20px 20px;
 }
 
 .choose-img {
@@ -254,7 +245,7 @@ main span {
 
 .choose-body {
   margin-top: 7%;
-  width: 48%;
+  width: 100%;
 }
 
 .choose-body h1 {
@@ -265,7 +256,7 @@ main span {
 .choose-content {
   display: flex;
   align-items: start;
-  margin: 36px;
+  margin: 36px 10px;
 }
 
 .choose-content div {
@@ -467,9 +458,11 @@ main span {
 
 .instructor-card {
   background-color: #fff;
-  width: 74%;
-  padding: 16px;
+  width: 65%;
+  padding: 9px;
   margin: 8px auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* .instructor-card img{
@@ -826,7 +819,7 @@ footer {
     width: 100%;
   }
 
-  main div {
+  main .hero {
     text-align: initial;
     margin-left: 90px;
     margin-top: 5rem;
@@ -837,7 +830,9 @@ footer {
     font-weight: 800;
     width: 35%;
     line-height: 1.2;
+    margin: 0;
   }
+
 
   main div p {
     font-size: 18px;
@@ -846,12 +841,10 @@ footer {
     font-weight: 700;
   }
 
-  main div h1 span:last-child {
-    color: var(--clr-primary)
-  }
+
 
   .welcome-img {
-    height: 760px;
+    height: 807px;
     position: absolute;
     width: 39%;
     top: -39%;
@@ -884,6 +877,9 @@ footer {
     margin-top: 0px;
     margin-left: 32px;
   } */
+  main .hero-btns {
+    margin-top: 7%;
+  }
 
   .btn {
     padding: 16px 32px;
@@ -898,7 +894,7 @@ footer {
   .about-us .about {
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 12% 50px 30px 50px;
     line-height: 1.8;
   }
 
@@ -926,6 +922,24 @@ footer {
   /* .about-us p {
     width: 90%;
   } */
+  .choose {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .choose-body {
+    margin-top: 7%;
+    width: 48%;
+  }
+
+  .choose-content {
+    display: flex;
+    align-items: start;
+    margin: 36px;
+  }
 
   .programmes {
     margin-bottom: 140px;
@@ -1010,10 +1024,16 @@ footer {
   .instructor-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
+    margin: 30px;
+  }
+
+  .instructor-card {
+    width: 74%;
+    padding: 10px;
   }
 
   .contact {
-    margin-top: 3rem;
+    margin-top: 10%;
   }
 
   .contact .container {
