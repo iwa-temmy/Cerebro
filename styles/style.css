@@ -385,21 +385,25 @@ main span {
 }
 
 .instructors {
-  background-color: #fff;
+   background-image: url(../img/instructors.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: relative;
   padding: 50px 16px 20px 16px;
 }
 
 .instructors h1 {
   position: absolute;
-  color: #03043C;
+  color: #fff;
   font-weight: bold;
   font-size: 30px;
   margin: -56px 0;
   right: 5%;
 }
 
-.cards {
+/* .cards {
   margin-top: 60px;
 }
 
@@ -441,7 +445,7 @@ main span {
   font-size: 13px;
   padding-top: 10px;
   color: #67748E;
-}
+} */
 
 .contact {
   display: flex;
@@ -833,8 +837,8 @@ footer {
   }
 
   .events .container {
-    width: 85%;
-    margin-left: 15%;
+    width: 79%;
+    margin-left: 13%;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -878,7 +882,7 @@ footer {
 
   .contact .container .sub-content {
     width: 80%;
-    margin: 0 0 0 18%;
+    margin: 0 0 0 15%;
     flex-direction: row;
   }
 
@@ -888,6 +892,9 @@ footer {
 
   .contact .details {
     width: 80%;
+  }
+  .contact h1{
+    margin-left: -10%;
   }
 
   .contact-form {
