@@ -51,10 +51,11 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   overflow-y: hidden;
+  padding: 10px 20px;
 }
 
 .logo {
-  height: 100px;
+  height: 80px;
 }
 
 .nav-ul {
@@ -116,21 +117,29 @@ main {
 main .hero {
   text-align: center;
 }
-main div h1{
+
+main div h1 {
   margin: 17% 0;
 }
+
 main div h1 span:last-child {
   color: var(--clr-primary)
 }
+
 main div p {
-    font-size: 18px;
-    margin: 16px 32px;
-    font-weight: 700;
+  font-size: 18px;
+  margin: 16px 32px;
+  font-weight: 700;
 }
 
 .welcome-img {
   margin-top: 22px;
-  height: 540px;
+  padding: 0 20px;
+  height: 520px;
+}
+
+.not-visible {
+  display: none;
 }
 
 .btn {
@@ -433,7 +442,6 @@ main div p {
 
 .instructors {
   background: url('/img/Vector.png');
-  height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -777,7 +785,9 @@ footer {
     align-items: center;
     padding: 10px 0px 15px 0px;
   }
-
+  .logo{
+    height: 100px;
+  }
   nav img,
   nav ul {
     margin: 10px 78px;
@@ -841,15 +851,22 @@ footer {
     font-weight: 700;
   }
 
-
-
   .welcome-img {
-    height: 807px;
+    height: 817px;
     position: absolute;
     width: 39%;
-    top: -39%;
+    top: -45%;
     right: 0;
     z-index: -9;
+  }
+
+
+  .not-visible {
+    display: block;
+  }
+
+  .remove {
+    display: none;
   }
 
   /* main {
@@ -1018,6 +1035,7 @@ footer {
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 35%;
+    height: 500px;
     padding-top: 10%;
   }
 
