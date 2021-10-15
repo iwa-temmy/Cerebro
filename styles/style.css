@@ -441,7 +441,8 @@ main span {
 }
 
 .instructors {
-  background: #DAA92F;
+  background: url('/img/BG.png');
+  height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -466,8 +467,11 @@ main span {
 /* .instructor-card img{
  
 } */
-.instructor-card h4 {
+.instructor-card p:first-of-type{
   color: #101011;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 8px 0 4px 0;
 }
 
 .instructors p{
@@ -740,7 +744,6 @@ footer {
 /* The Close Button */
 .close {
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
 }

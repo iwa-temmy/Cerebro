@@ -183,7 +183,7 @@
       </div>
     </div>
     <div style="display: flex; justify-content: center; margin-top: 80px;">
-      <button class="btn contact-btn" id="contact">View Projects</button>
+      <button class="btn contact-btn" id="view-project">View Projects</button>
     </div>
   </section>
   <section class="events" id="events" data-aos="zoom-in">
@@ -235,17 +235,17 @@
     <div class="instructor-cards">
       <div class="instructor-card">
         <img src="img/femiir.png" alt="faculty head" />
-        <h4>Oluwafemi Adebayo</h4>
+        <p>Oluwafemi Adebayo</p>
         <p>Faculty Head</p>
       </div>
       <div class="instructor-card">
         <img src="img/sylvia.png" alt="faculty head" />
-        <h4>Sylvia Onwukwe</h4>
+        <p>Sylvia Onwukwe</p>
         <p>Faculty Head</p>
       </div>
       <div class="instructor-card">
         <img src="img/valerie.png" alt="faculty head" />
-        <h4>Valerie Azubuike</h4>
+        <p>Valerie Azubuike</p>
         <p>Human Resources</p>
       </div>
     </div>
@@ -344,8 +344,30 @@
 
     <!-- Modal content -->
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Some text in the Modal..</p>
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      <button class="close">close</button>
+      <!-- <p>Some text in the Modal..</p> -->
     </div>
 
   </div>
