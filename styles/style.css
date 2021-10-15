@@ -217,8 +217,8 @@ main span {
   line-height: 1.4;
 }
 
-.about img {
-  width: 100%;
+.about-img {
+  height: 500px;
 }
 
 .goal {
@@ -729,7 +729,10 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
-
+  .goals{
+    justify-content: center;
+    width: 60%;
+  }
   /* .about-us p {
     width: 90%;
   } */
