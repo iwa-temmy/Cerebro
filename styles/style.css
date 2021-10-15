@@ -30,7 +30,7 @@ body {
 header {
   position: relative;
   z-index: 9;
-  height: 68.1rem;
+  height: 63.1rem;
 }
 
 .container {
@@ -135,7 +135,7 @@ main div p {
 .welcome-img {
   margin-top: 22px;
   padding: 0 20px;
-  height: 520px;
+  height: 451px;
 }
 
 .not-visible {
@@ -216,13 +216,28 @@ main div p {
   color: #03043C;
   line-height: 1.4;
 }
+.about-img-container{
+  position: relative;
+}
 
 .about-img {
   height: 500px;
+  position: relative;
   width: 100%;
   margin-top: 10%;
+  z-index: -1;
 }
-
+.play-button{
+  position: absolute;
+  cursor: pointer;
+  color: #DAA92F;
+  font-size: 24px;
+  padding: 20px 24px;
+  top: 48%;
+  right: 42%;
+  border-radius: 50%;
+  z-index: 9;
+}
 .goal {
   display: flex;
   align-items: start;

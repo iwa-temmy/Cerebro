@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="styles/style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/fontawesome-free-5.12.1-web/css/all.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   <title>Cerebro</title>
 </head>
 
@@ -49,7 +51,7 @@
   </header>
   <!--Hero Section Ends here-->
   <!--About Section Starts here-->
-  <section class="about-us" data-aos="fade-up" id="about">
+  <section class="about-us" id="about">
     <div class="stats">
       <div>
         <h2>5,234</h2>
@@ -96,7 +98,8 @@
           teaching, our students can focus on the right and current tools used by developers. Answering questions that
           daunt students like where is this used? How can i apply this?...</p>
       </div>
-      <div>
+      <div class="about-img-container">
+        <button class="play-button" onclick=" myGallery.open()"><i class="fas fa-play"></i></button>
         <img class="about-img" src="img/Video.png" />
       </div>
     </div>
@@ -145,7 +148,7 @@
   <!--About Section ends here-->
   <section class="programmes" id="programmes" data-aos="fade-right">
     <img class="programmes-bg" src="img/programs.png" alt="programs-background" />
-      <h1><span>Our</span> Programmes</h1>
+    <h1><span>Our</span> Programmes</h1>
     <img src="img/Group 36625.png" class="shape1" />
     <div class="cards">
       <div class="card for">
@@ -341,8 +344,10 @@
     </div>
   </footer>
   <button class="btn scroll-btn" onclick="scrollTopAnimated()"><i class="fas fa-arrow-up"></i></button>
+  <a href="https://vimeo.com/115041822" class="glightbox">
+    <img src="small.jpg" alt="image" />
+  </a>
   <div id="myModal" class="modal">
-
     <!-- Modal content -->
     <div class="modal-content">
       <!-- Tab links -->
@@ -351,7 +356,6 @@
         <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
         <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
       </div>
-
       <!-- Tab content -->
       <div id="London" class="tabcontent">
         <h3>London</h3>
@@ -373,7 +377,7 @@
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script>
     AOS.init();
   </script>
@@ -395,6 +399,17 @@
     }
   </script>
   <script src="js/script.js"></script>
+  <script type="text/javascript">
+    const myGallery = GLightbox({
+      elements: [{
+        'href': 'https://youtu.be/0eYSPR_kQMg',
+        'type': 'video',
+        'source': 'youtube', //vimeo, youtube or local
+        'width': 900,
+      }, ],
+      autoplayVideos: true,
+    });
+  </script>
 </body>
 
 </html>
