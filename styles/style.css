@@ -170,7 +170,7 @@ main div p {
   position: relative;
   width: 100%;
   background-color: #FFF3D4;
-  z-index: -4;
+  z-index: 4;
 }
 
 .stats {
@@ -650,7 +650,7 @@ footer {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
-  padding: 90px 40px 70px 40px;
+  padding: 90px 40px 48px 40px;
 }
 
 .tabs {
@@ -904,6 +904,7 @@ footer {
     top: -45%;
     right: 0;
     z-index: -9;
+    padding: 0;
   }
 
 
