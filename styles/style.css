@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
 
 :root {
   --clr-main: #201907;
@@ -223,6 +223,7 @@ main span {
 
 .goal {
   display: flex;
+  align-items: start;
   flex-direction: row;
   margin: 20px 0px
 }
@@ -231,8 +232,37 @@ main span {
 }
 .goal p{
   margin-left: 16px;
+  font-weight: 600;
 }
-
+.choose{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 50px
+}
+.choose-img{
+  width: 87%;
+  height: 650px;
+}
+.choose-body{
+  width: 48%;
+}
+.choose-body h1{
+  font-size: 24px;
+  font-weight: 700;
+}
+.choose-content{
+  display: flex;
+  align-items: start;
+  margin: 20px;
+}
+.choose-content div{
+  margin: 10px;
+}
+.choose-content h4{
+  margin-top: -10px;
+  margin-bottom: 8px;
+}
 .programmes {
   position: relative;
   margin-bottom: 300px;
@@ -728,10 +758,21 @@ footer {
   .about-us .about {
     flex-direction: row;
     justify-content: space-between;
+    padding: 30px 50px;
+    line-height: 1.8;
+  }
+  .about h3{
+    font-size: 20px;
+  }
+  .about .description{
+    width: 65%;
+  }
+  .about .description:last-child{
+    width: 90%;
   }
   .goals{
     justify-content: center;
-    width: 60%;
+    width: 63%;
   }
   /* .about-us p {
     width: 90%;
