@@ -1236,7 +1236,9 @@ footer {
     width: 74%;
     padding: 10px;
   }
-
+  .instructor-card img{
+    width: 250px;
+  }
   .contact {
     margin-top: 10%;
   }
@@ -1260,7 +1262,7 @@ footer {
   }
 
   .contact h1 {
-    margin-left: -10%;
+    margin-left: -5%;
   }
 
   .contact-form {
