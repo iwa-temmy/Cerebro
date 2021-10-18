@@ -830,7 +830,7 @@ footer {
 }
 
 .modal-content h1 span {
-  display: block;
+  display: inline-block;
 }
 
 /* The Close Button */
@@ -850,13 +850,11 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
-.modal-image{
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 400px;
-  
+
+.modal-image {
+  display: none;
 }
+
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -907,7 +905,7 @@ footer {
 }
 
 .tabcontent p:last-of-type {
-  width: 60%;
+  width: 100%;
   margin: 40px 0;
 }
 
@@ -1245,9 +1243,11 @@ footer {
     width: 74%;
     padding: 10px;
   }
-  .instructor-card img{
+
+  .instructor-card img {
     width: 250px;
   }
+
   .contact {
     margin-top: 10%;
   }
@@ -1328,6 +1328,21 @@ footer {
     font-size: 14px;
   }
 
+  .modal-content h1 {
+    position: relative;
+    float: right;
+    margin-right: 53px;
+    z-index: 3;
+  }
+
+  .modal-content h1 span {
+    display: block;
+  }
+
+  .tabcontent p:last-of-type {
+    width: 60%;
+  }
+
   .tabs ul {
     list-style: none;
   }
@@ -1340,5 +1355,14 @@ footer {
   .scroll-btn {
     display: none;
     padding: 15px 18px;
+  }
+
+  .modal-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 400px;
+
   }
 }
