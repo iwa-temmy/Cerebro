@@ -819,11 +819,14 @@ footer {
   width: 80%;
   /* Could be more or less, depending on screen size */
   border-radius: 20px;
+  position: relative;
 }
 
 .modal-content h1 {
+  position: relative;
   float: right;
   margin-right: 53px;
+  z-index: 3;
 }
 
 .modal-content h1 span {
@@ -847,7 +850,13 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
-
+.modal-image{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 400px;
+  
+}
 /* Style the tab */
 .tab {
   overflow: hidden;
