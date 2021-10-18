@@ -1016,32 +1016,6 @@ footer {
   .remove {
     display: none;
   }
-
-  /* main {
-    margin-top: 90px;
-    position: relative;
-    padding-left: 80px;
-    padding-right: 60px;
-    padding-bottom: 80px;
-    overflow: hidden;
-  }
-  main div{
-    width: 50%;
-  }
-  main span {
-    padding: 6px;
-    font-size: 40px
-  }
-
-  main p span:nth-of-type(2) {
-    color: #47BEB4;
-  }
-
-  main p {
-    margin-bottom: 28px;
-    margin-top: 0px;
-    margin-left: 32px;
-  } */
   main .hero-btns {
     margin-top: 7%;
   }
@@ -1240,7 +1214,7 @@ footer {
   }
 
   .instructor-card {
-    width: 74%;
+    width: 270px;
     padding: 10px;
   }
 
