@@ -151,13 +151,15 @@ main div p {
   cursor: pointer;
   outline: 0;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .program-btn {
   background-color: var(--clr-primary);
   border: 1px solid var(--clr-primary);
   color: white;
+  border-radius: 8px;
   text-transform: uppercase;
 }
 
@@ -169,11 +171,17 @@ main div p {
 
 .contact-btn {
   background-color: #fff;
-  border: 1px solid var(--clr-primary);
+  border: 2px solid var(--clr-primary);
   margin-left: 16px;
   color: var(--clr-main);
   outline: 0;
+   border-radius: 8px;
   text-transform: uppercase;
+}
+.contact-btn:hover {
+  color: #fff;
+  background: #DAA92F;
+  border: 2px solid #DAA92F;
 }
 
 .about-us {
