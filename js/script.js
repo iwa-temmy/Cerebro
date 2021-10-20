@@ -55,3 +55,17 @@ function openCity(evt, cityName) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+// Creator's Modal
+const creatorModalTrigger = document.getElementById("creator")
+const creatorModal = document.getElementById("creator-modal")
+
+creatorModalTrigger.onclick = function () {
+  creatorModal.style.display = "block";
+}
+// When the user clicks anywhere outside of the modal, close the creator's modal
+window.onclick = function (event) {
+  if (event.target == creatorModal) {
+    creatorModal.style.display = "none";
+  }
+}

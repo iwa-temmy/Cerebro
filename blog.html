@@ -6,11 +6,159 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" type="text/css" href="styles/fontawesome-free-5.12.1-web/css/all.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/blog.css" />
   <title>Cerebro</title>
 </head>
 
 <body>
-  <h1>Blog!!!!!!</h1>
+  <div class="main-container">
+    <nav>
+      <img src="/img/logo.png" alt="cerebro's logo" />
+      <a href="index.html">Home</a>
+    </nav>
+    <h2 class="page-title">Blogs</h2>
+    <div class="recent-blog">
+      <img src="/img/recent.png" alt="post-card image" />
+      <div id="content">
+        <a href="post.html">
+          <h4 class="category">design</h4>
+          <p id="date">Oct 24, 2021</p>
+          <h1 id="title">3d Icon Design in 2021</h1>
+          <span id="featured">Featured</span>
+        </a>
+      </div>
+    </div>
+    <div class="post-cards">
+      <div class="post-card">
+        <a href="/blog.html">
+          <img src="img/blog-img1.png" />
+          <div class="post-card-content">
+            <div>
+              <h4 class="category">design</h4>
+              <span><i class="far fa-eye"></i> 324</span>
+            </div>
+            <h2 class="post-card-title">Color Theory & Stories</h2>
+          </div>
+        </a>
+      </div>
+      <div class="post-card">
+        <a href="/blog.html">
+          <img src="img/blog-img2.png" />
+          <div class="post-card-content">
+            <div>
+              <h4 class="category">Programming</h4>
+              <span><i class="far fa-eye"></i> 324</span>
+            </div>
+            <h2 class="post-card-title">Importance of Javascript ES7 in
+              2022</h2>
+          </div>
+        </a>
+      </div>
+      <div class="post-card">
+        <a href="/blog.html">
+          <img src="img/blog-img3.png" />
+          <div class="post-card-content">
+            <div>
+              <h4 class="category">design</h4>
+              <span><i class="far fa-eye"></i> 324</span>
+            </div>
+            <h2 class="post-card-title">Color Theory & Stories</h2>
+          </div>
+        </a>
+      </div>
+      <div class="post-card">
+        <a href="/blog.html">
+          <img src="img/blog-img4.png" />
+          <div class="post-card-content">
+            <div>
+              <h4 class="category">design</h4>
+              <span><i class="far fa-eye"></i> 324</span>
+            </div>
+            <h2 class="post-card-title">Color Theory & Stories</h2>
+          </div>
+        </a>
+      </div>
+      <div class="post-card">
+        <a href="/blog.html">
+          <img src="img/blog-img1.png" />
+          <div class="post-card-content">
+            <div>
+              <h4 class="category">design</h4>
+              <span><i class="far fa-eye"></i> 324</span>
+            </div>
+            <h2 class="post-card-title">Color Theory & Stories</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="tabs">
+      <div class="partner">
+        <div>
+          <img src="img/codegarage.svg" alt="codegarage logo" />
+        </div>
+        <div class="powered">
+          <p class="text1">Powered by</p>
+          <p class="text2">CodegarageAfrica</p>
+        </div>
+      </div>
+      <div class="sitemap">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programmes">Programmes</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="#" id="creator" onclick="console.log('clicked')">Creator's story</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <h4>Socials</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/cerebrocc/">Facebook</a></li>
+          <li><a href="">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/cc_cerebro/">Instagram</a></li>
+          <li><a href="https://twitter.com/cc_cerebro">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="office">
+        <h4>Newsletter</h4>
+        <div class="newsletter">
+          <div class="email_input">
+            <input placeholder="Enter your email address" />
+            <button class="mail-icon"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="final">
+      <p class="copyright">&copy 2021 Cerebro Academy All rights reserved</p>
+    </div>
+  </footer>
+  <button class="btn scroll-btn" onclick="scrollTopAnimated()"><i class="fas fa-arrow-up"></i></button>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 550) {
+          $('.scroll-btn').fadeIn();
+        } else {
+          $('.scroll-btn').fadeOut();
+        }
+      });
+    });
+
+    function scrollTopAnimated() {
+      $("html, body").animate({
+        scrollTop: "0"
+      }, 300);
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
