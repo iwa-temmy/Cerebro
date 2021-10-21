@@ -499,9 +499,9 @@ main div p {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* .instructor-card img{
- 
-} */
+.instructor-card img{
+ width: 100%;
+}
 .instructor-card p:first-of-type {
   color: #101011;
   font-size: 15px;
