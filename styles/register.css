@@ -37,6 +37,7 @@ body {
   order: 2;
   padding: 20% 3% 5% 3%;
 }
+
 .forms a {
   color: var(--clr-main);
   position: absolute;
@@ -98,7 +99,19 @@ body {
 
 aside {
   order: 1;
-  padding: 20% 4% 0% 4%;
+  background: url('/img/payment-bg.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding-top: 80px;
+  background-size: cover;
+  padding: 20% 4% 4% 4%;
+}
+
+aside div {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px 10px;
+  border-radius: 8px;
 }
 
 aside div p:first-of-type {
@@ -109,11 +122,13 @@ aside div p:first-of-type {
 aside div ul {
   padding: 20px;
 }
-aside h1{
+
+aside h1 {
   text-transform: uppercase;
 
 }
-#copyright{
+
+#copyright {
   display: none;
 }
 
@@ -126,7 +141,7 @@ aside h1{
   .forms {
     width: 50%;
     padding: 6% 3% 2% 3%;
-    order:1;
+    order: 1;
   }
 
   .forms a {
@@ -166,7 +181,8 @@ aside h1{
     padding: 30px;
     border-radius: 8px;
   }
-  #copyright{
+
+  #copyright {
     display: block;
     position: absolute;
     bottom: 0;
