@@ -164,14 +164,14 @@
           Learn to code and work for the best tech company of your choice.</p>
         <p> With Cerebro, you can learn Web Development, Python, React, UxUi via offline classes in Ibadan or Online
           classes. 20% Promo discount for early starters.</p>
-          <p>Learn: 
-            <ul>
-              <li>Web Development for N45,000 against the original price of N70,000</li>
-              <li>Python for N70,000 against the original price of N120,000</li>
-              <li>Web React for N60,000 against the original price of N100,000</li>
-              <li>UI/UX for N20,000 against the original price of N35,000</li>
-            </ul>
-          </p>
+        <p>Learn:
+          <ul>
+            <li>Web Development for N45,000 against the original price of N70,000</li>
+            <li>Python for N70,000 against the original price of N120,000</li>
+            <li>Web React for N60,000 against the original price of N100,000</li>
+            <li>UI/UX for N20,000 against the original price of N35,000</li>
+          </ul>
+        </p>
       </div>
     </aside>
   </div>
@@ -238,9 +238,31 @@
       }, 300);
     }
   </script>
+  <script>
+    //Form tab
+    function openForm(evt, classType) {
+      // Declare all variables
+      var i, form, tablinks;
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+      // Get all elements with class="tabcontent" and hide them
+      form = document.getElementsByClassName("form");
+      for (i = 0; i < form.length; i++) {
+        form[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(classType).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    // Get the element with id="default" and click on it
+    document.getElementById("defaulttab").click();
+  </script>
 </body>
 
 </html>

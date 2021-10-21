@@ -23,6 +23,7 @@ body {
 }
 .main-wrapper{
   display: flex;
+  flex-direction: column;
 }
 .form {
   display: none;
@@ -33,4 +34,11 @@ body {
 .form {
   animation: fadeEffect 1s;
   /* Fading effect takes 1 second */
+}
+
+@media only screen and (min-width: 768px){
+  .main-wrapper{
+    flex-direction: row;
+  }
+
 }

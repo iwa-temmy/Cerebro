@@ -1,4 +1,4 @@
-const hambuger = document.getElementById("hamburger");
+const hamburger = document.getElementById("hamburger");
 const navUL = document.getElementById("nav-ul");
 const navContainer = document.getElementById("fixed");
 // Get the modal
@@ -18,21 +18,22 @@ hamburger.addEventListener('click', () => {
 
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -68,28 +69,4 @@ window.onclick = function (event) {
   if (event.target == creatorModal) {
     creatorModal.style.display = "none";
   }
-}
-
-// Get the element with id="default" and click on it
-document.getElementById("defaulttab").click();
-//Form tab
-function openForm(evt, classType) {
-  // Declare all variables
-  var i, form, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  form = document.getElementsByClassName("form");
-  for (i = 0; i < form.length; i++) {
-    form[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(classType).style.display = "block";
-  evt.currentTarget.className += " active";
 }
