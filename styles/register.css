@@ -3,6 +3,7 @@
 :root {
   --clr-main: #201907;
   --clr-primary: #DAA92F;
+  --clr-inputs: #ABA9A2;
 }
 
 * {
@@ -21,24 +22,141 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
 }
-.main-wrapper{
+
+.main-wrapper {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
+
+#instruction {
+  margin: 20px 0;
+}
+
+.forms {
+  order: 2;
+  padding: 20% 3% 10% 3%;
+}
+.forms a {
+  color: var(--clr-main);
+  position: absolute;
+  top: 30px;
+  text-decoration: none;
+}
+
 .form {
   display: none;
   padding: 6px 12px;
   margin-top: 3%;
   line-height: 1.5;
 }
+
 .form {
   animation: fadeEffect 1s;
   /* Fading effect takes 1 second */
 }
 
-@media only screen and (min-width: 768px){
-  .main-wrapper{
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: var(--clr-inputs);
+  border: 2px solid var(--clr-inputs);
+  border-radius: 6px;
+}
+
+.submit-btn {
+  margin: 20px 0;
+  width: 100%;
+  color: #fff;
+  background: var(--clr-primary);
+  text-transform: uppercase;
+  padding: 10px 16px;
+  font-weight: 500;
+  border: 2px solid var(--clr-primary);
+}
+
+.payment-details p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.payment-details p:last-of-type {
+  font-weight: 700;
+}
+
+aside {
+  order: 1;
+  padding: 0% 4%;
+}
+
+aside div p:first-of-type {
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+aside div ul {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
     flex-direction: row;
+    justify-content: space-between;
   }
 
+  .forms {
+    width: 50%;
+    padding: 7% 3% 2% 3%;
+    order:1;
+  }
+
+  .forms a {
+    top: 4%;
+    left: 1%;
+  }
+
+  .form {
+    height: 450px;
+    overflow-y: scroll;
+  }
+
+  #location {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #location .form-control {
+    width: 48%;
+    margin: 10px 0;
+  }
+
+  aside {
+    width: 50%;
+    background: url('/img/payment-bg.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding-top: 80px;
+    background-size: cover;
+    padding: 14% 8%;
+    order: 2;
+  }
+
+  aside div {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+  }
 }
