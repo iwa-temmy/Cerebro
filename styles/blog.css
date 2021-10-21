@@ -32,7 +32,7 @@ a {
 .main-container {
   position: relative;
   padding: 0px 40px;
-  margin-bottom: 44%;
+  margin-bottom: 20%;
 }
 
 /* Nav Styles */
@@ -98,11 +98,18 @@ nav img {
   border: 2px solid var(--clr-primary);
 }
 
+hr {
+  width: 100%;
+  border: 1px solid var(--clr-main);
+}
+
 /* post-card-cards */
 .post-cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 40px;
+  padding: 0 40px;
+  margin: 20% 0;
 }
 
 .post-card img {
@@ -186,8 +193,9 @@ nav img {
   nav img {
     margin: 0;
   }
+
   .main-container {
-    margin-bottom: 13%;
+    margin-bottom: 4%;
   }
 
   /* Recent blog styles */
@@ -237,6 +245,8 @@ nav img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
+    margin: 4% 0 5% 0;
+    padding: 0px 40px;
   }
 
   .post-card img {
