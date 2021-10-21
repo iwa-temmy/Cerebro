@@ -69,3 +69,27 @@ window.onclick = function (event) {
     creatorModal.style.display = "none";
   }
 }
+
+// Get the element with id="default" and click on it
+document.getElementById("defaulttab").click();
+//Form tab
+function openForm(evt, classType) {
+  // Declare all variables
+  var i, form, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  form = document.getElementsByClassName("form");
+  for (i = 0; i < form.length; i++) {
+    form[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(classType).style.display = "block";
+  evt.currentTarget.className += " active";
+}

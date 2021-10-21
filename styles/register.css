@@ -21,3 +21,16 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
 }
+.main-wrapper{
+  display: flex;
+}
+.form {
+  display: none;
+  padding: 6px 12px;
+  margin-top: 3%;
+  line-height: 1.5;
+}
+.form {
+  animation: fadeEffect 1s;
+  /* Fading effect takes 1 second */
+}
